@@ -5,9 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+var myRandomNum = getRandomInt(387);
 root.render(
   <React.StrictMode>
-    <App />
+    <App num= {myRandomNum}  />
+    
   </React.StrictMode>
 );
 

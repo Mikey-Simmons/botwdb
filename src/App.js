@@ -1,14 +1,40 @@
-import logo from './logo.svg';
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from "react";
 import './App.css';
 
-function App() {
+
+//https://api.github.com/users/mikey-simmons
+function App({ num }) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  useEffect(() => {
+    if (!num) return;
+    setLoading(true);
+    fetch(`https://botw-compendium.herokuapp.com/api/v2/entry/${num}`)
+      .then((response) => response.json())
+      .then(setData)
+      .then(() => setLoading(false))
+      .catch(setError);
+  }, [num]);
+
+if(loading) return <h1>Loading...</h1>;
+
+if(error) return <pre>{JSON.stringify(error,null, 2)}</pre>;
+if(!data) return null;
+console.log(data.data.name)
+   {
+    return (
+      <div>
+        <h1>{data.data.name}</h1>
+        <img src={data.data.image}></img>
+        <p>{data.data.description}</p>
+        <h3>{data.data.common_locations}</h3>
+      </div>
+    )
+  }
   return (
     <div className="App">
-     <h1>BOTWDB</h1>
+      No Data
     </div>
   );
 }
