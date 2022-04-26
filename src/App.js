@@ -24,11 +24,14 @@ if(!data) return null;
 console.log(data.data.name)
    {
     return (
-      <div>
-        <h1>{data.data.name}</h1>
+      <div className="App">
+        
+        <h1>{data.data.name.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())))}</h1>
         <img src={data.data.image}></img>
         <p>{data.data.description}</p>
-        <h3>{data.data.common_locations}</h3>
+        <h3>{data.data.common_locations.join(', ')}</h3>
+        
+        <footer>No. {data.data.id}</footer>
       </div>
     )
   }
