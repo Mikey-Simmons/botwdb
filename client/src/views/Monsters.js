@@ -30,7 +30,7 @@ if(!data) return null;
         <h1>Monsters</h1>
         {data.data.map(({name, image, description, common_locations, drops, id }) =>(
           <div>
-          <h1>{name}</h1>
+          <h1>{name.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())))}</h1>
           <img src={image}></img>
           <p>{description}</p>
           <h2>Locations:</h2>

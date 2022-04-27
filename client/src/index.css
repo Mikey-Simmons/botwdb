@@ -26,3 +26,11 @@ p{
 h2{
   color: yellow;
 }
+nav{
+  background-color: yellow !important;
+
+  
+}
+a{
+  color: #226F54 !important;
+}
