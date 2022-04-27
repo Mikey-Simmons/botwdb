@@ -8,32 +8,40 @@ function Random({ num }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   useEffect(() => {
-    if (!num) return;
+    
     setLoading(true);
     fetch(`https://botw-compendium.herokuapp.com/api/v2/category/monsters`)
       .then((response) => response.json())
       .then(setData)
       .then(() => setLoading(false))
       .catch(setError);
-  }, [num]);
+  }, []);
 
 if(loading) return <h1>Loading...</h1>;
 
 if(error) return <pre>{JSON.stringify(error,null, 2)}</pre>;
 if(!data) return null;
-console.log(data.data.name)
+
    {
     return (
       <div className="App">
-        
-        <h1>{data.data.name.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())))}</h1>
-        <img src={data.data.image}></img>
-        <p>{data.data.description}</p>
-        <h3>{data.data.common_locations.join(', ')}</h3>
-        
-        <footer>No. {data.data.id}</footer>
+        <h1>Monsters</h1>
+        {data.data.map(({name, image, description, common_locations, drops, id }) =>(
+          <div>
+          <h1>{name}</h1>
+          <img src={image}></img>
+          <p>{description}</p>
+          <h2>Locations:</h2>
+          <h3>{common_locations && common_locations.join(", ")}</h3>
+          <h2>Drops:</h2>
+          <h3>{drops && drops.join(", ")}</h3>
+         <p>No. {id}</p> 
+          </div>
+        ))}
+       
       </div>
     )
+
   }
   return (
     <div className="App">

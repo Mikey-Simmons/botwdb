@@ -32,6 +32,9 @@ console.log(data.data.name)
         <h3>{data.data.common_locations.join(', ')}</h3>
         
         <footer>No. {data.data.id}</footer>
+        <form action="/random">
+<button type="submit" >Random</button>
+</form>
       </div>
     )
   }
