@@ -11,11 +11,14 @@ function getRandomInt(max) {
 var myRandomNum = getRandomInt(387);
 const App = () => {
   return (
+    <div>
+      
     <Router>
       <Home num={myRandomNum} path= "/" />
       <Random num={myRandomNum} path="/random"/>
       <Monsters path="/monsters"></Monsters>
     </Router>
+    </div>
   );
 };
 

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {Link} from "@reach/router";
+import NavBar from "../components/navbar";
 function Random({ num }) {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(false);
@@ -40,10 +41,15 @@ function Random({ num }) {
   }
 function HomePage(){
     return(
+      
         <div className="App">
+          <NavBar></NavBar>
 <h1>Welcome to BOTWDB</h1>
 <form action="/random">
 <button type="submit" >Random</button>
+</form>
+<form action="/monsters">
+<button type="submit" >Monsters</button>
 </form>
 
         </div>

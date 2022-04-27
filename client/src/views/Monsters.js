@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import NavBar  from "../components/navbar";
 
 
 
@@ -24,7 +24,9 @@ if(!data) return null;
 
    {
     return (
+      
       <div className="App">
+        <NavBar></NavBar>
         <h1>Monsters</h1>
         {data.data.map(({name, image, description, common_locations, drops, id }) =>(
           <div>
