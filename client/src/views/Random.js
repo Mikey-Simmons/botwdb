@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import NavBar from "../components/navbar";
 
 
 
@@ -25,7 +25,7 @@ console.log(data.data.name)
    {
     return (
       <div className="App">
-        
+        <NavBar></NavBar>
         <h1>{data.data.name.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())))}</h1>
         <img src={data.data.image}></img>
         <p>{data.data.description}</p>
