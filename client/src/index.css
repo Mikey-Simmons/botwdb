@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:#226F54;
+  background-color:black;
 }
 
 code {
@@ -27,17 +27,43 @@ h2{
   color: yellow;
 }
 nav{
-  background-color: yellow !important;
+  background-color: black !important;
+  display: flex;
+  justify-content: center  !important;
+  font-family: Courier !important;
+  font-weight: bold;
+  font-size: x-large;
 
   
 }
+div.nav{
+  justify-content: center;
+  font-family: Ink Free !important;
+  font-weight: bold;
+  font-size: x-large !important; 
+}
 a{
   color: #226F54 !important;
+  font-family: Ink Free !important;
+  font-weight: bold !important;
+  font-size: x-large !important;
 }
 
-div.card{
-  width: 500px;
+
+
+table{
+  background-color: whitesmoke;
+  padding: 100px !important; 
+  
+  
+  
 }
-p.card-text{
-  color: black;
+
+img{
+  width: 100px;
+  height: 100px;
+}
+div.table{
+  padding-left: 20%;
+  padding-right: 20%;
 }

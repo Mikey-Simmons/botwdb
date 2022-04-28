@@ -45,12 +45,7 @@ function HomePage(){
         <div className="App">
           <NavBar></NavBar>
 <h1>Welcome to BOTWDB</h1>
-<form action="/random">
-<button type="submit" >Random</button>
-</form>
-<form action="/monsters">
-<button type="submit" >Monsters</button>
-</form>
+
 
         </div>
     )

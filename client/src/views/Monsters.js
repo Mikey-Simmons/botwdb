@@ -32,32 +32,42 @@ if(!data) return null;
     return (
     <div className="App">
       <NavBar></NavBar>
+      
+      <div className="table">
       <h1>Monsters</h1>
-      <div className="Monsters">
-        
-        
+        <table class="table  table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Monster</th>
+            <th scope="col">Image</th>
+            <th scope="col">Description</th>
+            <th scope="col">Drops:</th>
+            <th scope="col">Common Locations</th>
+          </tr>
+        </thead>
+        <tbody>
         
         {data.data.map(({name, image, description, common_locations, drops, id }) =>(
-          
-          <div className="Monster">
-            <div class="card" >
-  <img src={image} class="card-img-top" alt="..."/>
-  <div class="card-body">
-    <h5 class="card-title">{name.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())))}</h5>
-    <p class="card-text">{description}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-         
+           <tr>
+             
+             <th scope="row">{name}</th>
+             <td><img src={image}></img></td>
+             <td>{description}</td>
+             <td>{drops}</td>
+             <td>{common_locations}</td>
+           </tr>
           
           
           
           
-          </div>
+          
+          
         ))}
-       
+        </tbody>
+        </table>
+       </div>
       </div>
-      </div>
+      
     )
 
   }
