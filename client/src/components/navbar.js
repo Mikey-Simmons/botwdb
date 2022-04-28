@@ -16,7 +16,7 @@ function NavBar(){
           <a class="nav-link" href="/monsters">Monsters</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/items">Items</a>
+          <a class="nav-link" href="/equipment">Equipment</a>
         </li>
         
       </ul>

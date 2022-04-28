@@ -4,6 +4,7 @@ import {Router} from "@reach/router";
 import Random from "./views/Random";
 import Home from "./views/HomePage";
 import Monsters from "./views/Monsters";
+import Equipment from "./views/Equipment";
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
@@ -17,6 +18,7 @@ const App = () => {
       <Home num={myRandomNum} path= "/" />
       <Random num={myRandomNum} path="/random"/>
       <Monsters path="/monsters"></Monsters>
+<Equipment path="/equipment"/>
     </Router>
     </div>
   );

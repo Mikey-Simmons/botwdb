@@ -5,16 +5,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:black;
+  background-color: #52b788;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-    
+div.MyTitle{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 h1{
-  color: yellow;
+  color: #ffd166 !important;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: bold !important;
+  
 }
 h3{
   color: yellow;
@@ -27,7 +31,8 @@ h2{
   color: yellow;
 }
 nav{
-  background-color: black !important;
+  
+  background-color: #52b788;
   display: flex;
   justify-content: center  !important;
   font-family: Courier !important;
@@ -43,18 +48,18 @@ div.nav{
   font-size: x-large !important; 
 }
 a{
-  color: #226F54 !important;
-  font-family: Ink Free !important;
+  color: #ffd166 !important;
+  font-family: 'Maven Pro', sans-serif;
   font-weight: bold !important;
-  font-size: x-large !important;
+  font-size: xx-large !important;
 }
 
 
 
 table{
-  background-color: whitesmoke;
+  background-color: #b7e4c7 !important;
   padding: 100px !important; 
-  font-family: Ink Free !important;
+  font-family: 'Maven Pro', sans-serif;;
   
   
 }
@@ -64,6 +69,6 @@ img{
   height: 100px;
 }
 div.table{
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
