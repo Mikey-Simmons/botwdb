@@ -29,6 +29,7 @@ if(error) return <pre>{JSON.stringify(error,null, 2)}</pre>;
 if(!data) return null;
 
    {
+     data.data.sort((a,b)=> (a.name > b.name) ? 1: -1)
     return (
     <div className="App">
       <NavBar></NavBar>
@@ -46,7 +47,7 @@ if(!data) return null;
           </tr>
         </thead>
         <tbody>
-        
+       
         {data.data.map(({name, image, description, common_locations, drops, id }) =>(
            <tr>
              
