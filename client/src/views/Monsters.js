@@ -7,6 +7,12 @@ function Random({ num }) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [sortState, setSortState] = useState("none");
+  const sortMethods = {
+    none: { method: (a, b) => null },
+    ascending: { method: undefined },
+    descending: { method: (a, b) => (a > b ? -1 : 1) },
+  };
   useEffect(() => {
     
     setLoading(true);
@@ -24,23 +30,33 @@ if(!data) return null;
 
    {
     return (
-      
-      <div className="App">
-        <NavBar></NavBar>
-        <h1>Monsters</h1>
+    <div className="App">
+      <NavBar></NavBar>
+      <h1>Monsters</h1>
+      <div className="Monsters">
+        
+        
+        
         {data.data.map(({name, image, description, common_locations, drops, id }) =>(
-          <div>
-          <h1>{name.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())))}</h1>
-          <img src={image}></img>
-          <p>{description}</p>
-          <h2>Locations:</h2>
-          <h3>{common_locations && common_locations.join(", ")}</h3>
-          <h2>Drops:</h2>
-          <h3>{drops && drops.join(", ")}</h3>
-         <p>No. {id}</p> 
+          
+          <div className="Monster">
+            <div class="card" >
+  <img src={image} class="card-img-top" alt="..."/>
+  <div class="card-body">
+    <h5 class="card-title">{name.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())))}</h5>
+    <p class="card-text">{description}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+         
+          
+          
+          
+          
           </div>
         ))}
        
+      </div>
       </div>
     )
 

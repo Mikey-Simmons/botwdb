@@ -34,3 +34,10 @@ nav{
 a{
   color: #226F54 !important;
 }
+
+div.card{
+  width: 500px;
+}
+p.card-text{
+  color: black;
+}
