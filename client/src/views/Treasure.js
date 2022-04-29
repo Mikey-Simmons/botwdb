@@ -27,7 +27,7 @@ function Treasure(){
       </div>
       <div className="table">
       
-        <table class="table  table-striped">
+        <table class="table table-bordered  table-striped">
         <thead>
           <tr>
             <th scope="col">Item</th>
@@ -47,7 +47,7 @@ function Treasure(){
              <th scope="row">{name.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())))}</th>
              <td><img src={image}></img></td>
              <td>{description}</td>
-             <td>{drops.join(', ')}</td>
+             <td>{drops.join(', ').replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())))}</td>
              
              
 

@@ -24,6 +24,7 @@ if(error) return <pre>{JSON.stringify(error,null, 2)}</pre>;
 if(!data) return null;
 
    {
+    
      //Sort Data Alphabetically by name
      data.data.sort((a,b)=> (a.name > b.name) ? 1: -1)
     return (
