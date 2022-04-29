@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import NavBar  from "../components/navbar";
-
+import {RotateCircleLoading} from "react-loadingg"
 
 function Equipment(){
     const [data, setData] = useState(null);
@@ -15,7 +15,7 @@ function Equipment(){
       .then(() => setLoading(false))
       .catch(setError);
   }, []);
-  if(loading) return <h1>Loading...</h1>;
+  if(loading) return <h1><RotateCircleLoading color="whitesmoke"/></h1>;
   if(error) return <pre>{JSON.stringify(error,null, 2)}</pre>;
   if(!data) return null;
   data.data.sort((a,b)=> (a.name > b.name) ? 1: -1)

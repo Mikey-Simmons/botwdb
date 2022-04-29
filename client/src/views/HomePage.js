@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {Link} from "@reach/router";
 import NavBar from "../components/navbar";
+import {RotateCircleLoading} from 'react-loadingg';
 function Random({ num }) {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(false);
@@ -15,7 +16,7 @@ function Random({ num }) {
         .catch(setError);
     }, [num]);
   
-  if(loading) return <h1>Loading...</h1>;
+  if(loading) return <RotateCircleLoading color="whitesmoke"/> ;
   
   if(error) return <pre>{JSON.stringify(error,null, 2)}</pre>;
   if(!data) return null;
