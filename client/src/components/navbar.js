@@ -14,11 +14,15 @@ function NavBar(){
           <a class="nav-link" href="/monsters">Monsters</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="/creatures">Creatures</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="/equipment">Equipment</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/treasure">Treasure</a>
         </li>
+        
         
       </ul>
     </div>

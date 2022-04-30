@@ -6,6 +6,7 @@ import Home from "./views/HomePage";
 import Monsters from "./views/Monsters";
 import Equipment from "./views/Equipment";
 import Treasure from "./views/Treasure";
+import Creature from "./views/Creatures";
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
@@ -20,6 +21,7 @@ const App = () => {
       <Random num={myRandomNum} path="/random"/>
       <Monsters path="/monsters"></Monsters>
       <Treasure path="/treasure"></Treasure>
+      <Creature path="/creatures"/>
 <Equipment path="/equipment"/>
     </Router>
     </div>
