@@ -58,7 +58,7 @@ if(!data) return null;
              <td>{description}</td>
              <td>{hearts_recovered}</td>
              <td>{cooking_effect.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())))}</td>
-             <td>{common_locations}</td>
+             <td>{common_locations.join(', ')}</td>
            </tr>
           
           

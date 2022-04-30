@@ -52,7 +52,7 @@ function Equipment(){
              
 
              
-             <td>{common_locations}</td>
+             <td>{common_locations &&common_locations.join(", ")}</td>
            </tr>
           
           

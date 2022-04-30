@@ -58,7 +58,7 @@ if(!data) return null;
              <td>{description}</td>
              <td>{hearts_recovered}</td>
              <td>{cooking_effect.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())))}</td>
-             <td>{common_locations}</td>
+             <td>{common_locations&&common_locations.join(", ")}</td>
            </tr>
           
           
@@ -94,8 +94,8 @@ if(!data) return null;
              <th scope="row">{name.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())))}</th>
              <td><img src={image}></img></td>
              <td>{description}</td>
-             <td>{drops}</td>
-             <td>{common_locations}</td>
+             <td>{drops &&drops.join(", ").replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())))}</td>
+             <td>{common_locations &&common_locations.join(", ")}</td>
            </tr>
           
           

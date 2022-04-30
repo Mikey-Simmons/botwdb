@@ -3,7 +3,7 @@ import NavBar  from "../components/navbar";
 import {RotateCircleLoading} from 'react-loadingg';
 
 
-function Monster({ num }) {
+function Monster({  }) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -47,14 +47,14 @@ if(!data) return null;
         </thead>
         <tbody>
        
-        {data.data.map(({name, image, description, common_locations, drops, id }) =>(
+        {data.data.map(({name, image, description, common_locations, drops,  }) =>(
            <tr>
              
              <th scope="row">{name.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())))}</th>
              <td><img src={image}></img></td>
              <td>{description}</td>
-             <td>{drops}</td>
-             <td>{common_locations}</td>
+             <td>{drops &&drops.join(", ").replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())))}</td>
+             <td>{common_locations &&common_locations.join(", ")}</td>
            </tr>
           
           
