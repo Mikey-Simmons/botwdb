@@ -39,7 +39,7 @@ if(!data) return null;
         <table class="table table-bordered  table-striped">
         <thead>
           <tr>
-            <th scope="col">Monster</th>
+            <th scope="col">Creature</th>
             <th scope="col">Image</th>
             <th scope="col">Description</th>
             <th scope="col">Hearts Recovered</th>
