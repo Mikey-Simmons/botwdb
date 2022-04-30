@@ -3,7 +3,7 @@ function NavBar(){
         <div className="nav">
             <nav class="navbar navbar-expand-lg navbar">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">B0TWDB</a>
+    
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -15,6 +15,9 @@ function NavBar(){
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/creatures">Creatures</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/materials">Materials</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/equipment">Equipment</a>

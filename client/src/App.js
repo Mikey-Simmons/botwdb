@@ -7,6 +7,7 @@ import Monsters from "./views/Monsters";
 import Equipment from "./views/Equipment";
 import Treasure from "./views/Treasure";
 import Creature from "./views/Creatures";
+import Materials from "./views/Materials";
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
@@ -22,6 +23,7 @@ const App = () => {
       <Monsters path="/monsters"></Monsters>
       <Treasure path="/treasure"></Treasure>
       <Creature path="/creatures"/>
+      <Materials path="/materials"/>
 <Equipment path="/equipment"/>
     </Router>
     </div>
