@@ -76,3 +76,11 @@ div.table{
 .table-striped>tbody>tr:nth-of-type(odd)>*{
   color: whitesmoke !important;
 }
+div.home{
+  display: flex;
+  justify-content: center;
+}
+img.homepic{
+  width: 1000px !important;
+  height: 600px !important;
+}
