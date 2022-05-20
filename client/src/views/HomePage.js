@@ -36,7 +36,7 @@ function HomePage(){
         <div className="App">
           <NavBar></NavBar>
           <div className="home"> 
-          <img className="homepic" src={botwPic}></img>
+          
           </div>
           <div className="home">
 <h1>Welcome to BOTWDB!</h1>
