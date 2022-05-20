@@ -32,7 +32,7 @@ if(!data) return null;
     <div className="App">
       <NavBar></NavBar>
       <div className="MyTitle">
-      <h1>Creatures (food)</h1>
+      <h1>Creatures (Edible)</h1>
       </div>
       <div className="table">
       
@@ -71,7 +71,7 @@ if(!data) return null;
         </table>
        </div>
        <div className="MyTitle">
-      <h1>Creatures (non-food)</h1>
+      <h1>Creatures (Nonedible)</h1>
       </div>
        <div className="table">
       
