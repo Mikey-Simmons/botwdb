@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
-  background-color: #10002b !important;
+  background-color: black !important;
 }
 
 div.MyTitle{
@@ -16,7 +16,7 @@ div.MyTitle{
   padding-bottom: 50px;
 }
 h1{
-  color: whitesmoke !important;
+  color: #FF101F !important;
   font-family: 'Maven Pro', sans-serif;
   font-weight: bold !important;
   
@@ -25,7 +25,7 @@ h3{
   color: yellow;
 }
 p{
-  color:whitesmoke;
+  color:whitesmoke !important;
  
 }
 h2{
@@ -33,7 +33,7 @@ h2{
 }
 nav{
   
-  background-color: #10002b;
+  background-color: #FF101F;
   display: flex;
   justify-content: center  !important;
   font-family: Courier !important;
@@ -49,7 +49,7 @@ div.nav{
   font-size: x-large !important; 
 }
 a{
-  color: whitesmoke !important;
+  color: black!important;
   font-family: 'Maven Pro', sans-serif;
   font-weight: bold !important;
   font-size: xx-large !important;
@@ -58,13 +58,22 @@ a{
 
 
 table{
-  background-color: #240046 !important;
+  background-color: #FF101F!important;
   padding: 100px !important; 
   font-family: 'Maven Pro', sans-serif;
   color: whitesmoke !important;
-  
+  border-color: black !important; 
+  border-width: thick !important;
 }
-
+tr{
+  border-width: thick !important;
+}
+th{
+  border-width: thick !important;
+}
+td{
+  border-width: thick!important;
+}
 img{
   width: 100px;
   height: 100px;
@@ -72,9 +81,10 @@ img{
 div.table{
   padding-left: 10%;
   padding-right: 10%;
+  border-width: thick !important;
 }
 .table-striped>tbody>tr:nth-of-type(odd)>*{
-  color: whitesmoke !important;
+  color: black!important;
 }
 div.home{
   display: flex;
