@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
-  background-color: black !important;
+  background-color: #37606f!important;
 }
 
 div.MyTitle{
@@ -16,7 +16,7 @@ div.MyTitle{
   padding-bottom: 50px;
 }
 h1{
-  color: #FF101F !important;
+  color: #F7EE7F !important;
   font-family: 'Maven Pro', sans-serif;
   font-weight: bold !important;
   
@@ -33,7 +33,7 @@ h2{
 }
 nav{
   
-  background-color: #FF101F;
+  background-color: #305563;
   display: flex;
   justify-content: center  !important;
   font-family: Courier !important;
@@ -49,7 +49,7 @@ div.nav{
   font-size: x-large !important; 
 }
 a{
-  color: black!important;
+  color:#F7EE7F !important;
   font-family: 'Maven Pro', sans-serif;
   font-weight: bold !important;
   font-size: xx-large !important;
@@ -58,10 +58,10 @@ a{
 
 
 table{
-  background-color: #FF101F!important;
+  background-color: #AAAE8E!important;
   padding: 100px !important; 
   font-family: 'Maven Pro', sans-serif;
-  color: whitesmoke !important;
+  color: black !important;
   border-color: black !important; 
   border-width: thick !important;
 }
